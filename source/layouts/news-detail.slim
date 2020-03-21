@@ -13,4 +13,11 @@
 
       .row.content
         = yield
+        
+      .social
+          .icons
+            = link_to 'http://www.facebook.com/sharer.php?url={current_page.data.title}'
+              = image_tag "social/facebook.svg"
+            = link_to 'http://www.facebook.com/sharer.php?{current_page.url}'
+              = image_tag "social/twitter.svg"
 
