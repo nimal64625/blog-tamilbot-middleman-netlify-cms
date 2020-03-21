@@ -6,9 +6,9 @@ footer
         
         .social
           .icons
-            = link_to 'http://twitter.com/share?url=#{current_article.url}'
+            = link_to 'Twitter', current_page.url, class: "twitter"
               = image_tag "social/facebook.svg"
-            = link_to '#'
+            = link_to 'Twitter', "https://twitter.com/habitatsh", class: "twitter"
               = image_tag "social/twitter.svg"
             = link_to 'https://github.com/tomrutgers/middleman-starter-netlify-cms'
               = image_tag "social/github.svg"
