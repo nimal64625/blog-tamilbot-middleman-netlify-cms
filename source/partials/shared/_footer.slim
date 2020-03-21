@@ -8,7 +8,7 @@ footer
           .icons
             = link_to '#'
               = image_tag "social/facebook.svg"
-            = link_to '#'
+            = link_to 'http://twitter.com/share?text=<%= current_article.title %> by Jason Browne - &amp;url=<%= url_for([current_article.url, {only_path: false}]) %>'
               = image_tag "social/twitter.svg"
             = link_to 'https://github.com/tomrutgers/middleman-starter-netlify-cms'
               = image_tag "social/github.svg"
