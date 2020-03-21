@@ -6,9 +6,9 @@ footer
         
         .social
           .icons
-            = link_to 'http://www.facebook.com/sharer.php'
+            = link_to 'http://www.facebook.com/sharer.php?{article_url(article, :text => article.title)}'
               = image_tag "social/facebook.svg"
-            = link_to 'current_page.url'
+            = link_to '{current_page.url}'
               = image_tag "social/twitter.svg"
             = link_to 'https://github.com/tomrutgers/middleman-starter-netlify-cms'
               = image_tag "social/github.svg"
